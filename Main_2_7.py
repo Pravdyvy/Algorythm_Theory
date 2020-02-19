@@ -8,7 +8,7 @@ def test(TestName, N, M):
     arr = numpy.random.randint(0, M, N)
     arr.sort()
 
-    unique, counts = numpy.unique(arr, return_index=True)
+    unique, counts = numpy.unique(arr, return_counts=True)
     d = dict(zip(unique, counts))
 
     errors = 0
